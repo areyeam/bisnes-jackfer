@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { initializeApp } from 'firebase/app';
 import { 
-  getAuth, 
+  getAuth,  
   signInAnonymously, 
   signInWithCustomToken,
   onAuthStateChanged 
