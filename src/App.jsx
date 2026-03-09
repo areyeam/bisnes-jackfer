@@ -1,3 +1,22 @@
+import React, { useState, useEffect } from 'react';
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { ShoppingCart, MessageCircle, Clock } from 'lucide-react';
+
+// GANTIKAN DENGAN CONFIG FIREBASE ANDA SENDIRI
+const firebaseConfig = {
+  apiKey: "AIzaSy...",
+  authDomain: "bisnes-jackfer.firebaseapp.com",
+  projectId: "bisnes-jackfer",
+  storageBucket: "bisnes-jackfer.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abc123"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { initializeApp } from 'firebase/app';
 import { 
